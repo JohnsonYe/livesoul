@@ -1,6 +1,6 @@
 export default function ForSouls() {
   return (
-    <section id="for-souls" className="bg-cream py-24 md:py-32">
+    <section id="for-souls" className="relative overflow-hidden bg-cream py-24 md:py-32">
       {/* Warm amber tint via a subtle background layer */}
       <div
         aria-hidden="true"

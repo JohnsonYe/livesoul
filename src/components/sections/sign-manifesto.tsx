@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const SIGNATORY_COUNT = 847;
 
@@ -9,6 +9,13 @@ export default function SignManifesto() {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const successHeadingRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    if (submitted) {
+      successHeadingRef.current?.focus();
+    }
+  }, [submitted]);
 
   function validateEmail(value: string) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
@@ -42,7 +49,11 @@ export default function SignManifesto() {
             <div className="w-12 h-12 rounded-full border-2 border-amber mx-auto mb-8 flex items-center justify-center">
               <span className="text-amber text-xl" aria-hidden="true">✦</span>
             </div>
-            <h2 className="font-serif text-3xl md:text-4xl text-charcoal font-black mb-6">
+            <h2
+              ref={successHeadingRef}
+              tabIndex={-1}
+              className="font-serif text-3xl md:text-4xl text-charcoal font-black mb-6"
+            >
               Welcome to the movement.
             </h2>
             <p className="font-sans text-base text-stone leading-relaxed mb-8">
@@ -103,7 +114,7 @@ export default function SignManifesto() {
                   htmlFor="sign-email"
                   className="block font-sans text-xs tracking-widest uppercase text-stone mb-2"
                 >
-                  Email <span className="text-amber">*</span>
+                  Email <span className="text-amber" aria-hidden="true">*</span>
                 </label>
                 <input
                   id="sign-email"

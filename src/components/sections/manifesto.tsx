@@ -47,17 +47,11 @@ export default function Manifesto() {
 
           <p>
             LiveSoul exists because we believe human connection is not a luxury.
-            It is a need. Ancient, biological, urgent. And in a world where
-            everything else is being automated, the most radical thing you can
-            offer another person is your undivided presence.
-          </p>
-
-          <p>
-            We are not anti-technology. We are pro-human. We are building the
-            bridges between people who want to share real moments and people who
-            are extraordinary at creating them. Not a service. A connection. Not
-            a booking. A meeting of two human beings with something to offer
-            each other.
+            It is a need. Ancient, biological, urgent. We are not anti-technology
+            — we are pro-human. Building bridges between people who want to share
+            real moments and people who are extraordinary at creating them. In a
+            world where everything else is being automated, the most radical
+            thing you can offer another person is your undivided presence.
           </p>
 
           {/* Final call — styled distinctly */}
