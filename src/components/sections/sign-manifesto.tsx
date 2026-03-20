@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import FadeInUp from "@/components/fade-in-up";
 
 const SIGNATORY_COUNT = 847;
 
@@ -39,9 +40,11 @@ export default function SignManifesto() {
     <section id="sign" className="bg-parchment py-24 md:py-32">
       <div className="max-w-2xl mx-auto px-6">
         {/* Section label */}
-        <p className="text-xs tracking-widest uppercase text-stone mb-12">
-          Join the Movement
-        </p>
+        <FadeInUp>
+          <p className="text-xs tracking-widest uppercase text-stone mb-12">
+            Join the Movement
+          </p>
+        </FadeInUp>
 
         {submitted ? (
           /* Success state */
@@ -73,22 +76,24 @@ export default function SignManifesto() {
         ) : (
           <>
             {/* Heading */}
-            <h2 className="font-serif text-4xl md:text-5xl text-charcoal font-black leading-tight mb-4">
-              Sign the Manifesto
-            </h2>
-            <p className="font-sans text-base text-stone leading-relaxed mb-4">
-              10,000 people believe human connection matters. Do you?
-            </p>
+            <FadeInUp delay={0.1}>
+              <h2 className="font-serif text-4xl md:text-5xl text-charcoal font-black leading-tight mb-4">
+                Sign the Manifesto
+              </h2>
+              <p className="font-sans text-base text-stone leading-relaxed mb-4">
+                10,000 people believe human connection matters. Do you?
+              </p>
 
-            {/* Signatory counter */}
-            <p className="font-sans text-sm text-amber font-semibold mb-12">
-              Join {SIGNATORY_COUNT.toLocaleString()} signatories
-            </p>
+              {/* Signatory counter */}
+              <p className="font-sans text-sm text-amber font-semibold mb-12">
+                Join {SIGNATORY_COUNT.toLocaleString()} signatories
+              </p>
 
-            {/* Amber rule */}
-            <div className="w-16 h-px bg-amber mb-12" aria-hidden="true" />
+              {/* Amber rule */}
+              <div className="w-16 h-px bg-amber mb-12" aria-hidden="true" />
+            </FadeInUp>
 
-            {/* Form */}
+            {/* Form — kept outside animation for immediate interactivity */}
             <form onSubmit={handleSubmit} noValidate className="space-y-5">
               {/* Name (optional) */}
               <div>
@@ -143,7 +148,7 @@ export default function SignManifesto() {
               {/* Submit */}
               <button
                 type="submit"
-                className="w-full bg-amber text-cream font-sans font-semibold text-sm tracking-wide px-8 py-4 transition-opacity duration-200 hover:opacity-80 mt-2"
+                className="w-full bg-amber text-cream font-sans font-semibold text-sm tracking-wide px-8 py-4 transition-colors duration-200 hover:bg-amber/90 mt-2"
               >
                 I&apos;m Still Human
               </button>
