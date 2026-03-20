@@ -40,22 +40,20 @@ export default function Hero() {
         </FadeInUp>
 
         {/* Amber line — grows on load via CSS animation */}
-        <FadeInUp delay={0.3}>
-          <div
-            aria-hidden="true"
-            className="mx-auto mb-10 h-px bg-amber"
-            style={{
-              maxWidth: "120px",
-              animation: "amber-grow 1.2s ease-out 0.3s both",
-            }}
-          />
-          <style>{`
-            @keyframes amber-grow {
-              from { max-width: 0px; opacity: 0; }
-              to   { max-width: 120px; opacity: 1; }
-            }
-          `}</style>
-        </FadeInUp>
+        <div
+          aria-hidden="true"
+          className="mx-auto mb-10 h-px bg-amber"
+          style={{
+            maxWidth: "120px",
+            animation: "amber-grow 1.2s ease-out 0.3s both",
+          }}
+        />
+        <style>{`
+          @keyframes amber-grow {
+            from { max-width: 0px; opacity: 0; }
+            to   { max-width: 120px; opacity: 1; }
+          }
+        `}</style>
 
         {/* Body provocation */}
         <FadeInUp delay={0.35}>
