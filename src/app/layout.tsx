@@ -47,9 +47,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${inter.variable} h-full scroll-smooth`}
+      className={`${playfair.variable} ${inter.variable} h-full`}
     >
-      <body className="min-h-full flex flex-col bg-cream text-charcoal font-sans antialiased">
+      <body className="min-h-full flex flex-col font-sans antialiased">
         {children}
       </body>
     </html>

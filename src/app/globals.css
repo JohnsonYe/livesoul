@@ -1,16 +1,5 @@
 @import "tailwindcss";
 
-/* ─── Color Palette ─────────────────────────────────────────────────── */
-:root {
-  --color-cream: #FAF7F2;
-  --color-parchment: #F0EAE0;
-  --color-amber: #C4882F;
-  --color-clay: #8B4513;
-  --color-charcoal: #1C1917;
-  --color-stone: #57534E;
-  --color-mist: #E7E5E4;
-}
-
 /* ─── Tailwind v4 Theme ─────────────────────────────────────────────── */
 @theme {
   --color-cream: #FAF7F2;

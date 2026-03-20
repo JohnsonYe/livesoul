@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const NAV_LINKS = [
   { label: "Manifesto", href: "#manifesto" },
@@ -12,6 +12,7 @@ const NAV_LINKS = [
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const firstLinkRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
@@ -19,10 +20,23 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMenuOpen(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, []);
+
+  useEffect(() => {
+    if (menuOpen) firstLinkRef.current?.focus();
+  }, [menuOpen]);
+
   const handleLinkClick = () => setMenuOpen(false);
 
   return (
     <nav
+      aria-label="Main navigation"
       className={[
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
@@ -57,6 +71,8 @@ export default function Nav() {
         <button
           className="md:hidden flex flex-col gap-1.5 p-2 -mr-2 text-charcoal"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
           onClick={() => setMenuOpen((v) => !v)}
         >
           <span
@@ -79,12 +95,13 @@ export default function Nav() {
 
       {/* Mobile dropdown */}
       {menuOpen && (
-        <div className="md:hidden bg-cream border-b border-mist px-6 pb-6 pt-2">
+        <div id="mobile-menu" className="md:hidden bg-cream border-b border-mist px-6 pb-6 pt-2">
           <ul className="flex flex-col gap-4">
-            {NAV_LINKS.map(({ label, href }) => (
+            {NAV_LINKS.map(({ label, href }, index) => (
               <li key={href}>
                 <a
                   href={href}
+                  ref={index === 0 ? firstLinkRef : undefined}
                   onClick={handleLinkClick}
                   className="text-base font-medium text-stone hover:text-charcoal transition-colors duration-200"
                 >
