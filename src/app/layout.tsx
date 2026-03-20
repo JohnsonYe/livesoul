@@ -20,6 +20,15 @@ export const metadata: Metadata = {
   title: "LiveSoul — Still Human",
   description:
     "LiveSoul is a manifesto for human connection. In a world flooded with AI-mediated everything, we believe real relationships still matter. Still human. Always.",
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'LiveSoul',
+  },
+  icons: {
+    apple: '/icons/icon-192.png',
+  },
   openGraph: {
     title: "LiveSoul — Still Human",
     description:
