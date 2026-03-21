@@ -48,12 +48,6 @@ export default function Hero() {
             animation: "amber-grow 1.2s ease-out 0.3s both",
           }}
         />
-        <style>{`
-          @keyframes amber-grow {
-            from { max-width: 0px; opacity: 0; }
-            to   { max-width: 120px; opacity: 1; }
-          }
-        `}</style>
 
         {/* Body provocation */}
         <FadeInUp delay={0.35}>

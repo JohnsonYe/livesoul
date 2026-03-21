@@ -40,6 +40,11 @@ body {
     }
   }
 
+  @keyframes amber-grow {
+    from { max-width: 0px; opacity: 0; }
+    to   { max-width: 120px; opacity: 1; }
+  }
+
   .animate-fade-in-up {
     animation: fade-in-up 0.7s ease-out both;
   }
