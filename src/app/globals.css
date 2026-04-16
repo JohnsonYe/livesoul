@@ -2,12 +2,20 @@
 
 /* ─── Tailwind v4 Theme ─────────────────────────────────────────────── */
 @theme {
-  --color-void: #080808;
-  --color-surface: #111111;
-  --color-surface-raised: #1a1a1a;
-  --color-edge: #222222;
-  --color-fg: #f0f0f0;
-  --color-fg-dim: #666666;
+  /* ── Page (light warm ivory) ──────────────────────────────────────── */
+  --color-void: #f5f4f0;
+  --color-surface: #ffffff;
+  --color-surface-raised: #eeece6;
+  --color-edge: #dedad3;
+  --color-fg: #111110;
+  --color-fg-dim: #706d68;
+
+  /* ── Terminal (always dark) ───────────────────────────────────────── */
+  --color-terminal: #0d0d0b;
+  --color-terminal-fg: #e8e8e8;
+  --color-terminal-fg-dim: #888888;
+
+  /* ── Accents (used on dark terminal surfaces) ─────────────────────── */
   --color-green: #28c840;
   --color-amber: #f1a25b;
   --color-red: #ff5f57;

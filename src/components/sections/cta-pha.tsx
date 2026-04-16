@@ -38,10 +38,10 @@ export default function CTAPHA() {
         <FadeInUp delay={0.15}>
           {/* Subtle radial glow behind input area */}
           <div
-            className="relative rounded-xl p-5 sm:p-8 bg-surface"
+            className="relative rounded-xl p-5 sm:p-8 border border-edge"
             style={{
               background:
-                "radial-gradient(ellipse 60% 80% at 30% 50%, rgba(40,200,64,0.05) 0%, transparent 70%), #111111",
+                "radial-gradient(ellipse 60% 80% at 30% 50%, rgba(40,200,64,0.07) 0%, transparent 70%), #ffffff",
             }}
           >
             <div className="font-mono text-xs text-fg-dim mb-4">

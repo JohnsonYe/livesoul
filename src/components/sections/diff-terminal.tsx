@@ -73,14 +73,14 @@ export default function DiffTerminal() {
           </p>
         </FadeInUp>
 
-        <div ref={ref} className="bg-surface rounded-xl p-5 overflow-x-auto">
+        <div ref={ref} className="bg-terminal rounded-xl p-5 overflow-x-auto">
           <div className="flex gap-1.5 mb-4">
             <div className="w-3 h-3 rounded-full bg-red" />
             <div className="w-3 h-3 rounded-full bg-amber" />
             <div className="w-3 h-3 rounded-full bg-green" />
           </div>
 
-          <div className="font-mono text-sm text-fg-dim leading-7 mb-3">
+          <div className="font-mono text-sm text-terminal-fg-dim leading-7 mb-3">
             // the future, described as a diff
           </div>
 

@@ -15,7 +15,6 @@ const POINTS = [
     num: "03",
     title: "scarcity defines value",
     body: "The rarest thing in an automated world is a human who shows up.",
-    accent: true,
   },
 ];
 
@@ -45,7 +44,7 @@ export default function Thesis() {
               <div className="border-t border-edge py-6 flex gap-6 items-baseline">
                 <span className="font-mono text-[11px] text-fg-dim shrink-0 w-6">{p.num}</span>
                 <div>
-                  <p className={`text-base font-medium mb-1.5 ${p.accent ? "text-green" : "text-fg"}`}>
+                  <p className="text-base font-medium text-fg mb-1.5">
                     {p.title}
                   </p>
                   <p className="text-fg-dim text-[14px] leading-relaxed max-w-[460px]">{p.body}</p>
