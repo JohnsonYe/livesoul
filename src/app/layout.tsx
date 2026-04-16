@@ -5,7 +5,7 @@ import "./globals.css";
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["400", "700", "900"],
+  weight: ["400", "500", "700"],
   display: "swap",
 });
 
@@ -17,35 +17,35 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "LiveSoul — Still Human",
+  title: "PostHumanAPI — the only endpoint that feels something",
   description:
-    "LiveSoul is a manifesto for human connection. In a world flooded with AI-mediated everything, we believe real relationships still matter. Still human. Always.",
+    "PostHumanAPI connects you with real people — for a meal, a walk, a sport, a conversation, an adventure. Not a bot. Not a subscription. A human, on demand.",
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
-    statusBarStyle: 'default',
-    title: 'LiveSoul',
+    statusBarStyle: 'black-translucent',
+    title: 'PostHumanAPI',
   },
   icons: {
     apple: '/icons/icon-192.png',
   },
   openGraph: {
-    title: "LiveSoul — Still Human",
+    title: "PostHumanAPI — the only endpoint that feels something",
     description:
-      "In a world flooded with AI-mediated everything, we believe real relationships still matter.",
+      "In a world of infinite intelligence, we remain as the only API that's still human.",
     type: "website",
-    siteName: "LiveSoul",
+    siteName: "PostHumanAPI",
   },
   twitter: {
     card: "summary_large_image",
-    title: "LiveSoul — Still Human",
+    title: "PostHumanAPI — the only endpoint that feels something",
     description:
-      "In a world flooded with AI-mediated everything, we believe real relationships still matter.",
+      "In a world of infinite intelligence, we remain as the only API that's still human.",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#C4882F",
+  themeColor: "#080808",
 };
 
 export default function RootLayout({
@@ -58,7 +58,7 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${inter.variable} h-full`}
     >
-      <body className="min-h-full flex flex-col font-sans antialiased">
+      <body className="min-h-full flex flex-col font-sans antialiased bg-void text-fg">
         {children}
       </body>
     </html>

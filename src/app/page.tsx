@@ -1,27 +1,25 @@
 import Nav from "@/components/nav";
-import Hero from "@/components/sections/hero";
-import Manifesto from "@/components/sections/manifesto";
-import Problem from "@/components/sections/problem";
-import WhatIsLiveSoul from "@/components/sections/what-is-livesoul";
-import ForSouls from "@/components/sections/for-souls";
-import ForSeekers from "@/components/sections/for-seekers";
-import ThePromise from "@/components/sections/the-promise";
-import SignManifesto from "@/components/sections/sign-manifesto";
-import Footer from "@/components/sections/footer";
+import HeroPHA from "@/components/sections/hero-pha";
+import ProblemPHA from "@/components/sections/problem-pha";
+import Thesis from "@/components/sections/thesis";
+import HowItWorks from "@/components/sections/how-it-works";
+import TheHumans from "@/components/sections/the-humans";
+import DiffTerminal from "@/components/sections/diff-terminal";
+import CTAPHA from "@/components/sections/cta-pha";
+import FooterPHA from "@/components/sections/footer-pha";
 
 export default function Home() {
   return (
     <main>
       <Nav />
-      <Hero />
-      <Manifesto />
-      <Problem />
-      <WhatIsLiveSoul />
-      <ForSouls />
-      <ForSeekers />
-      <ThePromise />
-      <SignManifesto />
-      <Footer />
+      <HeroPHA />
+      <ProblemPHA />
+      <Thesis />
+      <HowItWorks />
+      <TheHumans />
+      <DiffTerminal />
+      <CTAPHA />
+      <FooterPHA />
     </main>
   );
 }

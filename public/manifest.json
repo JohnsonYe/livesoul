@@ -1,11 +1,11 @@
 {
-  "name": "LiveSoul — Still Human",
-  "short_name": "LiveSoul",
-  "description": "Sign the manifesto. Join the movement. Be here. Together.",
+  "name": "PostHumanAPI — the only endpoint that feels something",
+  "short_name": "PostHumanAPI",
+  "description": "PostHumanAPI connects you with real people. Not a bot. Not a subscription. A human, on demand.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FAF7F2",
-  "theme_color": "#C4882F",
+  "background_color": "#080808",
+  "theme_color": "#080808",
   "orientation": "portrait-primary",
   "icons": [
     {
