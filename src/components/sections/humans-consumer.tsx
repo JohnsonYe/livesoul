@@ -29,7 +29,7 @@ const HUMANS = [
 
 export default function HumansConsumer() {
   return (
-    <section className="py-16 md:py-28">
+    <section className="py-16 md:py-28 bg-surface-raised">
       <div className="max-w-3xl mx-auto px-6">
         <FadeInUp>
           <p className="text-fg-dim text-sm">Who you&rsquo;ll meet</p>
@@ -46,7 +46,7 @@ export default function HumansConsumer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {HUMANS.map((human, i) => (
             <FadeInUp key={human.initials} delay={i * 0.1}>
-              <div className="bg-surface rounded-xl p-6 border border-edge h-full">
+              <div className="bg-surface p-6 border border-edge h-full">
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center font-mono text-xs font-medium mb-5"
                   style={{

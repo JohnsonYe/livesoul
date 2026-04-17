@@ -1,4 +1,4 @@
-"use client";
+import ScrollHint from "@/components/scroll-hint";
 
 export default function HeroConsumer() {
   return (
@@ -31,6 +31,8 @@ export default function HeroConsumer() {
           Request an introduction
         </a>
       </div>
+
+      <ScrollHint />
 
       <span className="absolute bottom-4 right-6 text-white/25 text-[10px] font-sans">
         Photo: Unsplash

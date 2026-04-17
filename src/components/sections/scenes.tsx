@@ -23,7 +23,7 @@ const SCENES = [
 
 export default function Scenes() {
   return (
-    <section className="py-16 md:py-28">
+    <section className="py-16 md:py-28 bg-surface">
       <div className="max-w-3xl mx-auto px-6">
         <FadeInUp>
           <p className="font-serif text-2xl sm:text-3xl text-fg italic leading-snug mb-12 max-w-xl">
