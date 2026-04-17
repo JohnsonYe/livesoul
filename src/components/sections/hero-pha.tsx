@@ -42,7 +42,9 @@ export default function HeroPHA() {
 
         {/* Heading */}
         <h1 className="font-serif text-[40px] md:text-6xl lg:text-7xl font-medium text-fg leading-[1.1] mb-5 tracking-tight">
-          In a world of infinite intelligence, we remain as the only API that&rsquo;s still human.
+          In a world of infinite intelligence
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are still just human
         </h1>
 
         {/* Subline */}
