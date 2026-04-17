@@ -41,14 +41,14 @@ export default function HeroPHA() {
         </div>
 
         {/* Heading */}
-        <h1 className="font-serif text-[40px] md:text-6xl lg:text-7xl font-medium text-fg leading-[1.1] mb-5 tracking-tight">
+        <h1 className="font-serif text-[24px] sm:text-3xl md:text-4xl lg:text-5xl font-medium text-fg leading-[1.2] mb-5 tracking-tight text-center">
           In a world of infinite intelligence
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are still just human
+          We are still just human
         </h1>
 
         {/* Subline */}
-        <p className="text-fg-dim text-base md:text-[17px] leading-relaxed max-w-xl mb-8 md:mb-10">
+        <p className="text-fg-dim text-base md:text-[17px] leading-relaxed max-w-xl mb-8 md:mb-10 text-center mx-auto">
           PostHumanAPI connects you with real people — for a meal, a walk, a sport, a conversation, an adventure. Not a bot. Not a subscription. A human, on demand.
         </p>
 
