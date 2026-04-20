@@ -4,7 +4,7 @@ const HUMANS = [
   {
     name: "Amara M.",
     location: "Lagos & London",
-    bio: "She grew up cooking in Lagos. Now she does dinners in London that feel like coming home — market mornings, long afternoons, tables that don't end early.",
+    bio: "She grew up cooking in Lagos. Now she does dinners in London that feel like coming home. Market mornings, long afternoons, tables that don't end early.",
     // Warm market/food editorial — hands over a spread, not a face
     image:
       "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
@@ -36,7 +36,7 @@ export default function HumansV2() {
             Who you&rsquo;ll meet
           </p>
           <h2 className="font-serif text-3xl md:text-4xl text-fg font-medium leading-tight mb-4">
-            People valued not for their output &mdash; but for who they are.
+            People valued not for their output, but for who they are.
           </h2>
           <p className="text-fg-dim text-[15px] leading-relaxed mb-14 max-w-xl">
             Every person on PostHumanAPI was introduced by someone who knew

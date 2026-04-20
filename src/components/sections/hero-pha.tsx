@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import Terminal from "@/components/terminal";
-import CountUp from "@/components/countup";
 
 export default function HeroPHA() {
   const glowRef = useRef<HTMLDivElement>(null);
@@ -49,34 +48,31 @@ export default function HeroPHA() {
 
         {/* Subline */}
         <p className="text-fg-dim text-base md:text-[17px] leading-relaxed max-w-xl mb-8 md:mb-10 text-center mx-auto">
-          PostHumanAPI connects you with real people — for a meal, a walk, a sport, a conversation, an adventure. Not a bot. Not a subscription. A human, on demand.
+          PostHumanAPI connects you with real people. A meal, a walk, a sport, a conversation, an adventure. Not a bot. Not a subscription. A human, on demand.
         </p>
 
         {/* Stats */}
-        <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-8 md:mb-10">
-          <div className="bg-surface rounded-lg p-3 sm:p-4">
-            <div className="font-mono text-xl sm:text-2xl font-medium text-fg">
-              <CountUp target={247} />
-            </div>
-            <div className="text-fg-dim text-[10px] sm:text-xs mt-1">on waitlist</div>
+        <div className="flex justify-center gap-6 sm:gap-12 mb-8 md:mb-10">
+          <div className="text-center">
+            <div className="font-mono text-3xl sm:text-4xl font-medium text-fg">∞</div>
+            <div className="text-fg-dim text-xs mt-2 tracking-wide">AI alternatives</div>
           </div>
-          <div className="bg-surface rounded-lg p-3 sm:p-4">
-            <div className="font-mono text-xl sm:text-2xl font-medium text-fg">∞</div>
-            <div className="text-fg-dim text-[10px] sm:text-xs mt-1">AI alternatives</div>
-          </div>
-          <div className="bg-surface rounded-lg p-3 sm:p-4">
-            <div className="font-mono text-xl sm:text-2xl font-medium text-fg">1</div>
-            <div className="text-fg-dim text-[10px] sm:text-xs mt-1">human API</div>
+          <div className="w-px bg-edge self-stretch" />
+          <div className="text-center">
+            <div className="font-mono text-3xl sm:text-4xl font-medium text-fg">1</div>
+            <div className="text-fg-dim text-xs mt-2 tracking-wide">human API</div>
           </div>
         </div>
 
         {/* CTA */}
+        <div className="flex justify-center">
         <a
           href="#waitlist"
-          className="block sm:inline-block text-center font-mono text-sm px-6 py-3 border border-green text-green hover:bg-green hover:text-void transition-colors duration-200 rounded-full"
+          className="inline-block text-center font-mono text-sm px-6 py-3 border border-green text-green hover:bg-green hover:text-void transition-colors duration-200 rounded-full"
         >
           Request Early Access →
         </a>
+        </div>
       </div>
     </section>
   );

@@ -10,8 +10,8 @@ const ACTIVE_CITIES = [
 ];
 
 const COMING_CITIES = [
-  { name: "Paris", detail: "Founding members — Summer 2026" },
-  { name: "Milan", detail: "Founding members — Autumn 2026" },
+  { name: "Paris", detail: "Founding members, Summer 2026" },
+  { name: "Milan", detail: "Founding members, Autumn 2026" },
 ];
 
 export default function CitiesConsumer() {
@@ -86,7 +86,7 @@ export default function CitiesConsumer() {
 
             {submitted ? (
               <p className="font-serif italic text-fg text-sm">
-                Thank you — {city} is noted. We&rsquo;ll be in touch.
+                Thank you. {city} is noted and we&rsquo;ll be in touch.
               </p>
             ) : (
               <form

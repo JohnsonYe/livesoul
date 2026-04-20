@@ -32,7 +32,7 @@ export default function HowItWorks() {
         <FadeInUp delay={0.1}>
           <p className="text-fg-dim text-[15px] leading-[1.8] max-w-[540px] mb-10">
             Whether you need a companion to explore a new city, a chef to cook and share a meal,
-            a tennis partner, or simply someone to talk to — PostHumanAPI matches you with a real
+            a tennis partner, or simply someone to talk to. PostHumanAPI matches you with a real
             person whose skills and soul fit your moment.
           </p>
         </FadeInUp>

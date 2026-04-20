@@ -7,7 +7,7 @@ export default function ProblemPHA() {
         <FadeInUp>
           <p className="font-mono text-xs text-fg-dim tracking-widest mb-3">// the problem</p>
           <h2 className="text-4xl font-medium text-fg leading-tight mb-6">
-            Technology optimised everything — except connection.
+            Technology optimised everything. Except connection.
           </h2>
         </FadeInUp>
 
@@ -20,14 +20,14 @@ export default function ProblemPHA() {
         <FadeInUp delay={0.2}>
           <blockquote className="border-l-2 border-amber pl-6 my-8">
             <p className="font-serif text-xl text-fg leading-[1.65] italic">
-              &ldquo;A meaningful life is not built on seamless transactions. It is built on moments that move us — a shared meal that lingers, a conversation that changes you, a silence that reminds you that you are not alone.&rdquo;
+              &ldquo;A meaningful life is not built on seamless transactions. It is built on moments that move us: a shared meal that lingers, a conversation that changes you, a silence that reminds you that you are not alone.&rdquo;
             </p>
           </blockquote>
         </FadeInUp>
 
         <FadeInUp delay={0.3}>
           <p className="text-fg-dim text-[15px] leading-[1.8] max-w-[580px]">
-            AI accelerates this. Intelligence will be everywhere. Productivity will be abundant. But what becomes rare — genuinely rare — is human presence: energy, empathy, chemistry, story.
+            AI accelerates this. Intelligence will be everywhere. Productivity will be abundant. But what becomes genuinely rare is human presence: energy, empathy, chemistry, story.
           </p>
         </FadeInUp>
       </div>

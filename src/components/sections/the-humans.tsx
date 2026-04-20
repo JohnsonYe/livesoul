@@ -4,11 +4,11 @@ const PROFILES = [
   {
     name: "Amara M.",
     role: "Chef · New York",
-    bio: "She grew up cooking in West Africa. Now she runs intimate dinners in New York that feel like a homecoming — market mornings, long tables, strangers who leave as friends.",
-    tags: ["west african cuisine", "storyteller", "market walks"],
-    // Female chef at work in New York kitchen
+    bio: "She grew up in New York when the markets still had stories. From the original Essex Street stalls to the hidden corners of the Bronx, she knows where the city's real food culture lives. Walk with her and you eat history, not Instagram.",
+    tags: ["street food", "market walks", "food history"],
+    // People ordering from a New York City street vendor
     image:
-      "https://images.pexels.com/photos/3338497/pexels-photo-3338497.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.unsplash.com/photo-1767556879433-3fd1b6f8c708?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Julien L.",
@@ -21,12 +21,12 @@ const PROFILES = [
   },
   {
     name: "Sofia R.",
-    role: "Companion · Singapore",
-    bio: "She's lived in Singapore for twelve years and still finds new corners. Rooftop bars, hawker stalls at midnight, conversations that go on until you forget what time it is.",
-    tags: ["night walks", "deep conversation", "local secrets"],
-    // Asian woman on holiday, Singapore
+    role: "Historian · Singapore",
+    bio: "Born and raised in Singapore, she knows the city the way most people never will. Walk with her and the streets come alive with stories, from colonial shophouses to hidden temples that tourists walk past every day.",
+    tags: ["city history", "heritage walks", "local storytelling"],
+    // Woman exploring Singapore
     image:
-      "https://plus.unsplash.com/premium_photo-1722384016504-a4cdda20b82b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1756691085709-f1818e7be890?auto=format&fit=crop&w=800&q=80",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function TheHumans() {
             // the humans
           </p>
           <h2 className="text-4xl font-medium text-fg leading-tight mb-4">
-            People valued not for output — but for presence.
+            People valued not for output, but for presence.
           </h2>
         </FadeInUp>
 

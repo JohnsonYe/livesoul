@@ -34,7 +34,7 @@ export default function HumansConsumer() {
         <FadeInUp>
           <p className="text-fg-dim text-sm">Who you&rsquo;ll meet</p>
           <h2 className="font-serif text-3xl md:text-4xl text-fg font-medium leading-tight mb-4 mt-2">
-            People valued not for their output &mdash; but for who they are.
+            People valued not for their output, but for who they are.
           </h2>
           <p className="text-fg-dim text-[15px] leading-relaxed mb-10">
             Every person on PostHumanAPI was introduced by someone who knew

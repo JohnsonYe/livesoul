@@ -10,7 +10,7 @@ type Segment = { text: string; cls: string };
 type TermLine = { segs: Segment[] };
 
 const REQUEST_LINES: TermLine[] = [
-  { segs: [{ text: "// POST /human — the only endpoint that feels something", cls: "text-terminal-fg-dim" }] },
+  { segs: [{ text: "// POST /human: the only endpoint that feels something", cls: "text-terminal-fg-dim" }] },
   { segs: [{ text: "POST ", cls: "text-green" }, { text: "https://posthumanapi.com/v1/human", cls: "text-terminal-fg" }] },
   { segs: [{ text: "Content-Type: application/json", cls: "text-terminal-fg-dim" }] },
   { segs: [{ text: "{", cls: "text-terminal-fg-dim" }] },
@@ -21,7 +21,7 @@ const REQUEST_LINES: TermLine[] = [
 ];
 
 const RESPONSE_LINES: TermLine[] = [
-  { segs: [{ text: "// 200 OK — human found", cls: "text-terminal-fg-dim" }] },
+  { segs: [{ text: "// 200 OK: human found", cls: "text-terminal-fg-dim" }] },
   { segs: [{ text: "{", cls: "text-terminal-fg-dim" }] },
   { segs: [{ text: '  "status"', cls: "text-blue" }, { text: ": ", cls: "text-terminal-fg" }, { text: '"matched"', cls: "text-amber" }, { text: ",", cls: "text-terminal-fg" }] },
   { segs: [{ text: '  "presence"', cls: "text-blue" }, { text: ": ", cls: "text-terminal-fg" }, { text: "true", cls: "text-green" }, { text: ",", cls: "text-terminal-fg" }] },

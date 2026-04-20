@@ -13,7 +13,6 @@ export default function CTAPHA() {
   const [role, setRole] = useState<Role>(null);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
-  const [count] = useState(247);
 
   const handleSubmit = () => {
     if (email && email.includes("@")) {
@@ -70,10 +69,6 @@ export default function CTAPHA() {
                 "radial-gradient(ellipse 60% 80% at 30% 50%, rgba(40,200,64,0.06) 0%, transparent 70%), #ffffff",
             }}
           >
-            <div className="font-mono text-xs text-fg-dim mb-5">
-              {count} people on the waitlist
-            </div>
-
             {!submitted ? (
               <>
                 {/* Email */}
@@ -126,7 +121,7 @@ export default function CTAPHA() {
                   onClick={handleSubmit}
                   className="w-full font-mono text-sm py-3.5 rounded-full border border-green text-green hover:bg-green hover:text-void transition-colors duration-200 cursor-pointer tracking-wide"
                 >
-                  request early access →
+                  Request Early Access
                 </button>
 
                 <p className="font-mono text-xs text-fg-dim mt-4">
@@ -135,7 +130,7 @@ export default function CTAPHA() {
               </>
             ) : (
               <p className="font-mono text-sm text-green">
-                // 201 Created — you&rsquo;re on the list. we&rsquo;ll be in
+                // 201 Created. you&rsquo;re on the list. we&rsquo;ll be in
                 touch.
               </p>
             )}

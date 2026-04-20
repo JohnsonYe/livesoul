@@ -17,9 +17,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "PostHumanAPI — the only endpoint that feels something",
+  title: "PostHumanAPI: the only endpoint that feels something",
   description:
-    "PostHumanAPI connects you with real people — for a meal, a walk, a sport, a conversation, an adventure. Not a bot. Not a subscription. A human, on demand.",
+    "PostHumanAPI connects you with real people. For a meal, a walk, a sport, a conversation, an adventure. Not a bot. Not a subscription. A human, on demand.",
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     apple: '/icons/icon-192.png',
   },
   openGraph: {
-    title: "PostHumanAPI — the only endpoint that feels something",
+    title: "PostHumanAPI: the only endpoint that feels something",
     description:
       "In a world of infinite intelligence, we remain as the only API that's still human.",
     type: "website",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PostHumanAPI — the only endpoint that feels something",
+    title: "PostHumanAPI: the only endpoint that feels something",
     description:
       "In a world of infinite intelligence, we remain as the only API that's still human.",
   },

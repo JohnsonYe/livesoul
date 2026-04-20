@@ -4,7 +4,7 @@ const POINTS = [
   {
     num: "01",
     title: "intelligence is abundant",
-    body: "AI can write, code, plan, analyse — at infinite scale, near-zero cost.",
+    body: "AI can write, code, plan, analyse. At infinite scale, near-zero cost.",
   },
   {
     num: "02",
