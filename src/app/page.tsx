@@ -1,21 +1,25 @@
-import NavConsumer from "@/components/nav-consumer";
-import HeroConsumer from "@/components/sections/hero-consumer";
-import Scenes from "@/components/sections/scenes";
-import HumansConsumer from "@/components/sections/humans-consumer";
-import CitiesConsumer from "@/components/sections/cities-consumer";
-import CTAConsumer from "@/components/sections/cta-consumer";
-import FooterConsumer from "@/components/sections/footer-consumer";
+import Nav from "@/components/nav";
+import HeroPHA from "@/components/sections/hero-pha";
+import ProblemPHA from "@/components/sections/problem-pha";
+import Thesis from "@/components/sections/thesis";
+import HowItWorks from "@/components/sections/how-it-works";
+import TheHumans from "@/components/sections/the-humans";
+import DiffTerminal from "@/components/sections/diff-terminal";
+import CTAPHA from "@/components/sections/cta-pha";
+import FooterPHA from "@/components/sections/footer-pha";
 
 export default function Home() {
   return (
     <main>
-      <NavConsumer />
-      <HeroConsumer />
-      <Scenes />
-      <HumansConsumer />
-      <CitiesConsumer />
-      <CTAConsumer />
-      <FooterConsumer />
+      <Nav />
+      <HeroPHA />
+      <ProblemPHA />
+      <Thesis />
+      <HowItWorks />
+      <TheHumans />
+      <DiffTerminal />
+      <CTAPHA />
+      <FooterPHA />
     </main>
   );
 }

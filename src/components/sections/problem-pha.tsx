@@ -2,7 +2,7 @@ import FadeInUp from "@/components/fade-in-up";
 
 export default function ProblemPHA() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-10 md:py-14">
       <div className="max-w-3xl mx-auto px-6">
         <FadeInUp>
           <p className="font-mono text-xs text-fg-dim tracking-widest mb-3">// the problem</p>
