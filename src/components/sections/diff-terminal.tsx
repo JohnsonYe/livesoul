@@ -58,7 +58,7 @@ export default function DiffTerminal() {
   }, []);
 
   return (
-    <section className="py-10 md:py-14">
+    <section className="py-8 md:py-10">
       <div className="max-w-3xl mx-auto px-6">
         <FadeInUp>
           <p className="font-mono text-xs text-fg-dim tracking-widest mb-3">// why now</p>
@@ -69,7 +69,7 @@ export default function DiffTerminal() {
 
         <FadeInUp delay={0.1}>
           <p className="text-fg-dim text-[15px] leading-[1.8] max-w-[580px] mb-8">
-            We named ourselves PostHumanAPI because that&rsquo;s the world we&rsquo;re building for — a world where AI does everything except feel. We&rsquo;re not against that world. We&rsquo;re the necessary complement to it.
+            We named ourselves PostHumanAPI because that&rsquo;s the world we&rsquo;re building for, a world where AI does everything except feel.
           </p>
         </FadeInUp>
 

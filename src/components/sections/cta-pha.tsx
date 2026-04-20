@@ -25,7 +25,7 @@ export default function CTAPHA() {
   };
 
   return (
-    <section id="waitlist" className="py-10 md:py-14">
+    <section id="waitlist" className="py-8 md:py-10">
       <div className="max-w-3xl mx-auto px-6">
         <FadeInUp>
           <p className="font-mono text-xs text-fg-dim tracking-widest mb-3">
@@ -102,8 +102,8 @@ export default function CTAPHA() {
                 />
 
                 {/* Role selector */}
-                <p className="font-mono text-xs text-fg-dim mb-2">I wanna be</p>
-                <div className="flex gap-2 mb-5 flex-wrap">
+                <div className="flex gap-2 mb-5 flex-wrap items-center">
+                  <span className="font-mono text-xs text-fg-dim whitespace-nowrap">I wanna be</span>
                   {(["a host", "a guest", "both"] as Role[]).map((r) => (
                     <button
                       key={r!}
@@ -124,7 +124,7 @@ export default function CTAPHA() {
                 {/* Submit */}
                 <button
                   onClick={handleSubmit}
-                  className="w-full font-mono text-sm py-3.5 rounded-xl bg-fg text-void hover:bg-green hover:text-void transition-colors duration-200 cursor-pointer tracking-wide"
+                  className="w-full font-mono text-sm py-3.5 rounded-full border border-green text-green hover:bg-green hover:text-void transition-colors duration-200 cursor-pointer tracking-wide"
                 >
                   request early access →
                 </button>

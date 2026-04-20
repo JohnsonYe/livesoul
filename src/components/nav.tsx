@@ -30,7 +30,7 @@ export default function Nav() {
 
         <a
           href="#waitlist"
-          className="font-mono text-xs px-3 py-2 sm:px-4 border border-green text-green hover:bg-green hover:text-void transition-colors duration-200 whitespace-nowrap"
+          className="font-mono text-xs px-3 py-2 sm:px-4 border border-green text-green hover:bg-green hover:text-void transition-colors duration-200 whitespace-nowrap rounded-full"
         >
           <span className="hidden sm:inline">Request Early Access →</span>
           <span className="sm:hidden">Early Access →</span>

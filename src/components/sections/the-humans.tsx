@@ -6,33 +6,33 @@ const PROFILES = [
     role: "Chef · New York",
     bio: "She grew up cooking in West Africa. Now she runs intimate dinners in New York that feel like a homecoming — market mornings, long tables, strangers who leave as friends.",
     tags: ["west african cuisine", "storyteller", "market walks"],
-    // Chef at work, warm kitchen tones
+    // Female chef at work in New York kitchen
     image:
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+      "https://images.pexels.com/photos/3338497/pexels-photo-3338497.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     name: "Julien L.",
     role: "Guide · London",
     bio: "He knows every backstreet in Shoreditch, every hidden courtyard in Mayfair. Afternoons with Julien feel like finding something you didn't know you were looking for.",
     tags: ["hidden london", "architecture", "philosophy walks"],
-    // Atmospheric narrow European street, warm evening
+    // Guide walking through London old architecture streets
     image:
-      "https://images.unsplash.com/photo-1431274172761-fca41d930114?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Sofia R.",
     role: "Companion · Singapore",
     bio: "She's lived in Singapore for twelve years and still finds new corners. Rooftop bars, hawker stalls at midnight, conversations that go on until you forget what time it is.",
     tags: ["night walks", "deep conversation", "local secrets"],
-    // City at night, vibrant street life
+    // Asian woman on holiday, Singapore
     image:
-      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80",
+      "https://plus.unsplash.com/premium_photo-1722384016504-a4cdda20b82b?auto=format&fit=crop&w=800&q=80",
   },
 ];
 
 export default function TheHumans() {
   return (
-    <section className="py-10 md:py-14">
+    <section className="py-8 md:py-10">
       <div className="max-w-4xl mx-auto px-6">
         <FadeInUp>
           <p className="font-mono text-xs text-fg-dim tracking-widest mb-3">

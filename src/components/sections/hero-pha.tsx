@@ -73,7 +73,7 @@ export default function HeroPHA() {
         {/* CTA */}
         <a
           href="#waitlist"
-          className="block sm:inline-block text-center font-mono text-sm px-6 py-3 border border-green text-green hover:bg-green hover:text-void transition-colors duration-200"
+          className="block sm:inline-block text-center font-mono text-sm px-6 py-3 border border-green text-green hover:bg-green hover:text-void transition-colors duration-200 rounded-full"
         >
           Request Early Access →
         </a>
