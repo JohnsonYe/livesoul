@@ -24,7 +24,7 @@ export async function POST(req: Request) {
     return Response.json({ error: dbError.message }, { status: 500 });
   }
 
-  // Send confirmation email via Resend
+  // Confirmation email to the user
   await resend.emails.send({
     from: "PostHumanAPI <onboarding@resend.dev>",
     to: email,
@@ -37,6 +37,21 @@ export async function POST(req: Request) {
       <p>— PostHumanAPI</p>
     `,
   });
+
+  // Internal notification to the team
+  const notifyEmails = (process.env.notify_emails ?? "").split(",").map(e => e.trim()).filter(Boolean);
+  if (notifyEmails.length > 0) {
+    await resend.emails.send({
+      from: "PostHumanAPI <onboarding@resend.dev>",
+      to: notifyEmails,
+      subject: `New waitlist signup: ${email}`,
+      html: `
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>City:</strong> ${city || "not provided"}</p>
+        <p><strong>Role:</strong> ${role || "not selected"}</p>
+      `,
+    });
+  }
 
   return Response.json({ success: true });
 }
