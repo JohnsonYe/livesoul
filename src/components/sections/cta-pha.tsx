@@ -12,14 +12,26 @@ export default function CTAPHA() {
   const [city, setCity] = useState("");
   const [role, setRole] = useState<Role>(null);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
-  const handleSubmit = () => {
-    if (email && email.includes("@")) {
-      setSubmitted(true);
-      setError(false);
-    } else {
+  const handleSubmit = async () => {
+    if (!email || !email.includes("@")) {
       setError(true);
+      return;
+    }
+    setLoading(true);
+    try {
+      await fetch("/api/waitlist", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, city, role }),
+      });
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -119,9 +131,10 @@ export default function CTAPHA() {
                 {/* Submit */}
                 <button
                   onClick={handleSubmit}
-                  className="w-full font-mono text-sm py-3.5 rounded-full border border-green text-green hover:bg-green hover:text-void transition-colors duration-200 cursor-pointer tracking-wide"
+                  disabled={loading}
+                  className="w-full font-mono text-sm py-3.5 rounded-full border border-green text-green hover:bg-green hover:text-void transition-colors duration-200 cursor-pointer tracking-wide disabled:opacity-50"
                 >
-                  Request Early Access
+                  {loading ? "Sending..." : "Request Early Access"}
                 </button>
 
                 <p className="font-mono text-xs text-fg-dim mt-4">
@@ -130,8 +143,7 @@ export default function CTAPHA() {
               </>
             ) : (
               <p className="font-mono text-sm text-green">
-                // 201 Created. you&rsquo;re on the list. we&rsquo;ll be in
-                touch.
+                // 201 Created. you&rsquo;re on the list. we&rsquo;ll be in touch.
               </p>
             )}
           </div>
